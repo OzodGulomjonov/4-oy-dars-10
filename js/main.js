@@ -27,7 +27,8 @@ let elUserCommitResultNumber = document.querySelector(".result__number")
 
 
 function renderCommits(array, wrapper) {
-    wrapper.innerHTML = null
+    elUserCommitList.innerHTML = null
+
     let span3 = document.querySelector(".span3").textContent = array.length
     
     let fragment = document.createDocumentFragment()
@@ -63,7 +64,6 @@ function renderUsers(array) {
     
     elUserCommitList.innerHTML = null;
     elUsersWrapper.innerHTML = null;
-    elPostsWrapper.innerHTML = null
     
     let span1 = document.querySelector(".span1").textContent = array.length
     
@@ -84,6 +84,7 @@ function renderUsers(array) {
 function renderPosts(array) {
 
     elPostsWrapper.innerHTML = null;
+    elUserCommitList.innerHTML = null
     
     let span2 = document.querySelector(".span2").textContent = array.length
     
